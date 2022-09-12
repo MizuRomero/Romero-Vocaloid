@@ -5,6 +5,12 @@
             margin-right: 20px;
             padding-left: 100px;
             padding-right: 100px;
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
             .history{
                     div{
                         .thumb{
@@ -74,12 +80,14 @@
                 margin: 0;
                 .col{
                     .card{
-                        margin: 0;
-                        filter: brightness(0.5);
-                        &:hover{
-                            transform: scale(1.1);
-                            filter: brightness(1);
-                            transition: 0.5s ;
+                        img{
+                            margin: 0;
+                            filter: brightness(0.5);
+                            &:hover{
+                                transform: scale(1.1);
+                                filter: brightness(1);
+                                transition: 0.5s ;
+                        }
                         }
                     }
                 }
@@ -106,7 +114,7 @@
           
     }
     #merch-background-image {
-        background-image: url(..//media/merchbackground.jpg);
+        background-image: url(..//media/merchbanner.jpg);
         background-size: cover;
         filter: brightness(0.5);
     }
@@ -117,6 +125,11 @@
     }
     #news-background-image{
         background-image: url(..//media/newsbanner.jpg);
+        background-size: cover;
+        filter: brightness(0.5);
+    }
+    #support-background-image{
+        background-image: url(..//media/supportbackground.jpg);
         background-size: cover;
         filter: brightness(0.5);
     }
