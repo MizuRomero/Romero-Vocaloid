@@ -1,4 +1,26 @@
+@media screen and (min-width: 1100px) {
+  body div h1 {
+    font-size: 50px;
+  }
+  body div p {
+    text-align: justify;
+    font-size: 20px;
+  }
+  body div div .col .card {
+    filter: brightness(0.5);
+  }
+  body div div .col .card:hover {
+    filter: brightness(1);
+    transition: 0.5s;
+    width: 350px;
+    height: 560px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
 }/*# sourceMappingURL=style.css.map */
