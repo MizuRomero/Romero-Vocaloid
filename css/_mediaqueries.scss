@@ -1,5 +1,36 @@
 @media screen and (min-width: 990px){
     body{
+        .text{
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+            .history{
+                    div{
+                        .thumb{
+                            margin: 20px;
+                            padding: 20px;
+                            float: right;
+                        }
+                    }
+                }
+            }
+        .mobile-image{
+            display: none;
+        }
+        div{
+            .card-group{
+                img{
+                    margin: 10px;
+                    filter: brightness(0.5);
+                    &:hover{
+                        transform: scale(1.1);
+                        filter: brightness(1);
+                        transition: 0.5s ;
+                    }
+                }
+            }
+        }
         nav{
             display: flex;
             div{
@@ -40,9 +71,10 @@
                 font-size: 20px;
             }
             div{
+                margin: 0;
                 .col{
                     .card{
-                        margin: 10px;
+                        margin: 0;
                         filter: brightness(0.5);
                         &:hover{
                             transform: scale(1.1);
@@ -54,15 +86,52 @@
             }
         }
     }
+    .container-fluid{
+        padding: 0;
+        .background-image{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            .page-tittle-image {
+                font-family: "Quicksand", sans-serif;
+                font-size: 100px;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                font-weight: 400;
+                letter-spacing: 0.2em;
+              }
+          }
+          
+    }
+    #merch-background-image {
+        background-image: url(..//media/merchbackground.jpg);
+        background-size: cover;
+        filter: brightness(0.5);
+    }
+    #history-background-image{
+        background-image: url(..//media/historybanner.jpg);
+        background-size: cover;
+        filter: brightness(0.5);
+    }
+    #news-background-image{
+        background-image: url(..//media/newsbanner.jpg);
+        background-size: cover;
+        filter: brightness(0.5);
+    }
 }
 @media screen and (min-width: 320px) and (max-width:990px){
     body{
         nav{
-            div{
+            .container-fluid{
                 .social{
                     display: none;
                 }
             }
         }
+    }
+    .page-tittle-image{
+        display: none;
     }
 }

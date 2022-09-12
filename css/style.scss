@@ -7,26 +7,4 @@
 body{
     font-family: $font;
     /*Background images*/
-    .container-fluid{
-        padding: 0;
-        .background-image{
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 400px;
-            .page-tittle-image {
-                font-family: "Quicksand", sans-serif;
-                font-size: 100px;
-                text-align: center;
-                color: #fff;
-                font-weight: 400;
-                letter-spacing: 0.2em;
-              }
-          }
-    }
-}
-#merch-background-image {
-    background-image: url(..//Media/merchbackground.jpg);
-    background-size: cover;
 }

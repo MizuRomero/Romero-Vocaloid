@@ -1,4 +1,27 @@
 @media screen and (min-width: 990px) {
+  body .text {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  body .text .history div .thumb {
+    margin: 20px;
+    padding: 20px;
+    float: right;
+  }
+  body .mobile-image {
+    display: none;
+  }
+  body div .card-group img {
+    margin: 10px;
+    filter: brightness(0.5);
+  }
+  body div .card-group img:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+    transition: 0.5s;
+  }
   body nav {
     display: flex;
   }
@@ -35,8 +58,11 @@
     text-align: justify;
     font-size: 20px;
   }
+  body div div {
+    margin: 0;
+  }
   body div div .col .card {
-    margin: 10px;
+    margin: 0;
     filter: brightness(0.5);
   }
   body div div .col .card:hover {
@@ -44,9 +70,45 @@
     filter: brightness(1);
     transition: 0.5s;
   }
+  .container-fluid {
+    padding: 0;
+  }
+  .container-fluid .background-image {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  .container-fluid .background-image .page-tittle-image {
+    font-family: "Quicksand", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    letter-spacing: 0.2em;
+  }
+  #merch-background-image {
+    background-image: url(..//media/merchbackground.jpg);
+    background-size: cover;
+    filter: brightness(0.5);
+  }
+  #history-background-image {
+    background-image: url(..//media/historybanner.jpg);
+    background-size: cover;
+    filter: brightness(0.5);
+  }
+  #news-background-image {
+    background-image: url(..//media/newsbanner.jpg);
+    background-size: cover;
+    filter: brightness(0.5);
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 990px) {
-  body nav div .social {
+  body nav .container-fluid .social {
+    display: none;
+  }
+  .page-tittle-image {
     display: none;
   }
 }
@@ -58,27 +120,4 @@
 body {
   font-family: "Quicksand", sans-serif;
   /*Background images*/
-}
-body .container-fluid {
-  padding: 0;
-}
-body .container-fluid .background-image {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-}
-body .container-fluid .background-image .page-tittle-image {
-  font-family: "Quicksand", sans-serif;
-  font-size: 100px;
-  text-align: center;
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-}
-
-#merch-background-image {
-  background-image: url(..//Media/merchbackground.jpg);
-  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
